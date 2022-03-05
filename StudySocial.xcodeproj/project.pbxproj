@@ -14,6 +14,7 @@
 		3F5A4F5427D1AF3F00B4CBC4 /* StudySocial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A4F5227D1AF3F00B4CBC4 /* StudySocial.xcdatamodeld */; };
 		3F5A4F5627D1AF4300B4CBC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5A4F5527D1AF4300B4CBC4 /* Assets.xcassets */; };
 		3F5A4F5927D1AF4300B4CBC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5A4F5727D1AF4300B4CBC4 /* LaunchScreen.storyboard */; };
+		4A4E5B83817B12BAA514B87B /* Pods_StudySocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2762504607D5B8F566552EE /* Pods_StudySocial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		3F5A4F5527D1AF4300B4CBC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F5A4F5827D1AF4300B4CBC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F5A4F5A27D1AF4300B4CBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2762504607D5B8F566552EE /* Pods_StudySocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudySocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9A1BD20C161EC87F054F62 /* Pods-StudySocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudySocial.debug.xcconfig"; path = "Target Support Files/Pods-StudySocial/Pods-StudySocial.debug.xcconfig"; sourceTree = "<group>"; };
+		CA25953F5342E19D52670179 /* Pods-StudySocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudySocial.release.xcconfig"; path = "Target Support Files/Pods-StudySocial/Pods-StudySocial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4E5B83817B12BAA514B87B /* Pods_StudySocial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				3F5A4F4827D1AF3F00B4CBC4 /* StudySocial */,
 				3F5A4F4727D1AF3F00B4CBC4 /* Products */,
+				E2A5BE21BCBB45CB0BFB299E /* Pods */,
+				D1F98945E6F356B3A45001AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = StudySocial;
 			sourceTree = "<group>";
 		};
+		D1F98945E6F356B3A45001AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2762504607D5B8F566552EE /* Pods_StudySocial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2A5BE21BCBB45CB0BFB299E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE9A1BD20C161EC87F054F62 /* Pods-StudySocial.debug.xcconfig */,
+				CA25953F5342E19D52670179 /* Pods-StudySocial.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F5A4F5D27D1AF4300B4CBC4 /* Build configuration list for PBXNativeTarget "StudySocial" */;
 			buildPhases = (
+				8F1B0ACB8FAB831C33B7F260 /* [CP] Check Pods Manifest.lock */,
 				3F5A4F4227D1AF3F00B4CBC4 /* Sources */,
 				3F5A4F4327D1AF3F00B4CBC4 /* Frameworks */,
 				3F5A4F4427D1AF3F00B4CBC4 /* Resources */,
+				C72FD0287745D50C3B31F5A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F1B0ACB8FAB831C33B7F260 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StudySocial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C72FD0287745D50C3B31F5A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudySocial/Pods-StudySocial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudySocial/Pods-StudySocial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StudySocial/Pods-StudySocial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F5A4F4227D1AF3F00B4CBC4 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		3F5A4F5E27D1AF4300B4CBC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE9A1BD20C161EC87F054F62 /* Pods-StudySocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +376,7 @@
 		};
 		3F5A4F5F27D1AF4300B4CBC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA25953F5342E19D52670179 /* Pods-StudySocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
